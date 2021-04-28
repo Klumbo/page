@@ -8,10 +8,10 @@ function saveCoords(coordsObj)
 function handleGeoSuccess(position)
 {
     const latitude = position.coords.latitude;
-    const longtitude = position.coords.longtitude;
+    const longitude = position.coords.longitude;
     const coordsObj = {
          latitude,
-         longtitude
+         longitude
      };
     saveCoords(coordsObj);
 }

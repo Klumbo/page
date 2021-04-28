@@ -1,34 +1,11 @@
+/* 배경 색 (사진X) */
 body
 {
     background-color: #8883a17e;
+    color: #3d404dd0;
 }
 
-.btn
-{
-    cursor: pointer;
-}
-
-body
-{
-    color: #34495e;
-}
-
-.clicked 
-{
-    color: #e74c3c;
-}
-
-.form,
-.greetings
-{
-    display: none;
-}
-
-.showing
-{
-    display: block;
-}
-
+/* 배경 사진 */
 @keyframes fadeIn
 {
     from
@@ -40,7 +17,6 @@ body
         opacity: 1;
     }
 }
-
 .bgImage
 {
     position: absolute;
@@ -51,3 +27,97 @@ body
     z-index: -1;
     animation: fadeIn 1s linear;
 }   
+
+/* 이름 */
+.form,
+.greetings
+{
+    font-size: 150%;
+    text-align: center;
+    display: none;
+    vertical-align: middle;
+}
+.showing
+{
+    display: block;
+}
+
+/* 날씨 */
+.weather
+{
+    font-size: 120%;
+    text-align: right;
+
+}
+
+/* 할 일 목록 */
+.toDo
+{
+    text-align: center;
+    vertical-align: middle;
+}
+ul
+{
+    list-style:none;
+}
+.toDoBox
+{
+    font-size: 150%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 4px solid black;
+    background: rgba(0, 0, 0, 0.24);
+    border-radius: 10px;
+    
+}
+button
+{
+    border: none;
+    background: transparent;
+}
+.doListBox 
+{
+    width: 250px;
+    height: 140px;
+    overflow: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    background-color: rgba(0, 0, 0, 0.24);
+    border-radius: 5%;
+
+}
+.doListBox::-webkit-scrollbar 
+{
+    width: 10px;
+}
+.doListBox::-webkit-scrollbar-thumb 
+{
+    background-color: #2f354275;
+    border-radius: 10px;
+    background-clip: padding-box;
+    border: 2px solid transparent;
+}
+.doListBox::-webkit-scrollbar-track 
+{
+    background-color: rgba(128, 128, 128, 0.514);
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 5px rgba(255, 255, 255, 0.548);
+}
+
+/* 시계 */
+h1
+{
+    text-align: center;
+    vertical-align: middle;
+    font-size: 500%;
+    margin-top: 10%;
+}
+.js-clock
+{
+    vertical-align: middle;
+}
+
+
+

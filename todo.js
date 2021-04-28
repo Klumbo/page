@@ -47,9 +47,12 @@ function paintToDo(text)
 function handlesubmit(event)
 {
     event.preventDefault();
-    const currentValue = " " + toDoInput.value;
-    paintToDo(currentValue);
-    toDoInput.value = "";
+    if (toDoInput.value !== "")
+    {
+        const currentValue = "  " + toDoInput.value;
+        paintToDo(currentValue);
+        toDoInput.value = "";
+    }
 }
 
 function loadToDos()

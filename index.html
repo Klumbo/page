@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="index.css" />
     <head>
     <body>
+        <div class="weather"><span class="js-weather"></span></div>
         <div class="js-clock">
             <h1>00:00</h1> 
         </div>
@@ -13,12 +14,12 @@
             <input type="text" placeholder="What is your name?" />
         </form>
         <h4 class="js-greetings greetings"></h4>
-        <form class="js-toDoForm">
-            <input type="text" placeholder="Write a to do" />
+        <form class="js-toDoForm toDo">
+            <input class="toDoBox" type="text" placeholder="해야 할 일이 무엇인가요?" />
         </form>
-        <ul class="js-toDoList">
-        </ul>
-        <span class="js-weather"></span>
+        <div class="doListBox">
+            <ul class="js-toDoList"></ul>   
+        </div>
         <script src="clock.js"></script>
         <script src="greeting.js"></script>
         <script src="todo.js"></script>

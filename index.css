@@ -2,7 +2,7 @@
 body
 {
     background-color: #8883a17e;
-    color: #3d404dd0;
+    color: #303238e8;
 }
 
 /* 배경 사진 */
@@ -37,6 +37,16 @@ body
     display: none;
     vertical-align: middle;
 }
+.askNameBox
+{
+    font-size: 200%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 4px solid black;
+    background: rgba(0, 0, 0, 0.24);
+    margin-bottom: 30px;
+}
 .showing
 {
     display: block;
@@ -67,7 +77,7 @@ ul
     border-left: none;
     border-right: none;
     border-bottom: 4px solid black;
-    background: rgba(0, 0, 0, 0.24);
+    background: rgba(211, 211, 211, 0.24);
     border-radius: 10px;
     
 }
@@ -84,7 +94,7 @@ button
     margin-left: auto;
     margin-right: auto;
     margin-top: 30px;
-    background-color: rgba(0, 0, 0, 0.24);
+    background-color: rgba(189, 189, 189, 0.24);
     border-radius: 5%;
 
 }
@@ -112,7 +122,8 @@ h1
     text-align: center;
     vertical-align: middle;
     font-size: 500%;
-    margin-top: 10%;
+    margin-top: 50px;
+    margin-bottom: 30px;
 }
 .js-clock
 {
